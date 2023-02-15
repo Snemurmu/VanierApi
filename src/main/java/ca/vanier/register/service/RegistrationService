@@ -1,0 +1,13 @@
+public interface RegistrationService {
+    
+    Student save(Student student);
+
+    List<Student> findAll();
+
+    Optional<Student> findById(Long id);
+
+    void deleteById(Long id);
+
+    Student updateById(Student student, Long id);
+
+}
