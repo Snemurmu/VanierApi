@@ -17,8 +17,6 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Student save(Student student) {
-        // Empty fields
-
         return studentRepository.save(student);
     }
 
@@ -46,7 +44,7 @@ public class StudentServiceImpl implements StudentService {
         newStudent.setFname(student.getFname());
         newStudent.setLname(student.getLname());
         newStudent.setEmail(student.getEmail());
-        
+
         return studentRepository.save(newStudent);
     }
 
