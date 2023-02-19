@@ -40,4 +40,9 @@ public class RegistrationController {
         return courseService.save(course);
     }
 
+    @GetMapping("/course/list")
+    public List<Course> listCourses() {
+        return courseService.findAll();
+    }
+
 }

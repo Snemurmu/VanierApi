@@ -11,7 +11,16 @@ public class Teacher {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
+        
+    public Teacher() {
+    }
     
+    public Teacher(String fname, String lname, String email) {
+        this.fname = fname;
+        this.lname = lname;
+        this.email = email;
+    }
+
     private String fname;
     private String lname;
     private String email;

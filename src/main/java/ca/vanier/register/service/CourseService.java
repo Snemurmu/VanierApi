@@ -9,6 +9,8 @@ public interface CourseService {
 
     Course save(Course course);
 
+    boolean validateCourse(Course course);
+
     List<Course> findAll();
 
     Optional<Course> findById(Long id);

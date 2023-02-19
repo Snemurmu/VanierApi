@@ -100,6 +100,42 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "list courses",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "student",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vanier/course/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vanier",
+						"course",
+						"list"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

@@ -15,7 +15,15 @@ public class Student {
     private String fname;
     private String lname;
     private String email;
-
+    
+    public Student() {
+    }
+    
+    public Student(String fname, String lname, String email) {
+        this.fname = fname;
+        this.lname = lname;
+        this.email = email;
+    }
     public Long getId() {
         return id;
     }
